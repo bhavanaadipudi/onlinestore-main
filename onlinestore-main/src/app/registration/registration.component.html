@@ -1,0 +1,23 @@
+<!-- registration.component.html -->
+<div class="center-content">
+  <div class="form-container">
+    <h2 class="form-title">Register</h2>
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="username" class="form-label">Username:</label>
+        <input type="text" id="username" formControlName="username" class="form-input" [ngClass]="{'invalid-input': registerForm.get('username')?.invalid && registerForm.get('username')?.touched}" />
+        <div class="validation-error" *ngIf="registerForm.get('username')?.hasError('required') && registerForm.get('username')?.touched">
+          Username is required.
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="password" class="form-label">Password:</label>
+        <input type="password" id="password" formControlName="password" class="form-input" [ngClass]="{'invalid-input': registerForm.get('password')?.invalid && registerForm.get('password')?.touched}" />
+        <div class="validation-error" *ngIf="registerForm.get('password')?.hasError('required') && registerForm.get('password')?.touched">
+          Password is required.
+        </div>
+      </div>
+      <button type="submit" [disabled]="!registerForm.valid" class="form-button">Register</button>
+    </form>
+  </div>
+</div>

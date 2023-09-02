@@ -1,0 +1,156 @@
+/* user-management.component.css */
+
+.user-management {
+    padding: 20px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* usermanagement.component.css */
+
+/* Styling for the Create User button */
+.create-user-button {
+  background-color: #3498db; /* Set the background color */
+  color: #fff; /* Set the text color to white */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.create-user-button:hover {
+  background-color: #2980b9; /* Change to a slightly darker shade for hover effect */
+}
+
+
+/* Styling for the Add User form */
+.add-user-form {
+  background: linear-gradient(45deg, #3498db, #2c3e50); /* Gradient background color */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
+
+/* Additional styling for input fields, labels, buttons, etc. */
+.add-user-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.add-user-form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.add-user-form button[type="submit"] {
+  background-color:white; /* Change text color to white for better visibility */
+  color:#c0392b; /* Use one of the gradient colors for the button text */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-user-form button[type="submit"]:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Change to a lighter shade for hover effect */
+}
+
+
+/* Apply additional styling for input fields, labels, buttons, etc. */
+
+  
+  .user-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .user-list th,
+  .user-list td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  .user-list th {
+    background-color: #f2f2f2;
+  }
+  
+  .user-list tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .user-list button {
+    padding: 5px 10px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-right: 5px;
+  }
+  
+  .user-list button.edit-button:hover {
+    background-color: #c0392b;
+  }
+  
+  .user-list button.delete-button:hover {
+    background-color: #943126;
+  }
+  /* Add gradient background to the edit user form */
+.edit-user-form {
+    background: linear-gradient(45deg, #3498db, #2c3e50);
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .edit-user-form h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .edit-user-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .edit-user-form label {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .edit-user-form input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+  }
+  
+  .edit-user-form button {
+    padding: 12px 20px;
+    background-color: #16a085;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .edit-user-form button:hover {
+    background-color: #117a60;
+  }
+  
+  

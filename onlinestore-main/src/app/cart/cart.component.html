@@ -1,0 +1,17 @@
+<div class="cart-container">
+    <h2>Your Cart</h2>
+    <div class="cart-items">
+      <div *ngFor="let item of cartItems$ | async; let i = index" class="cart-item">
+        <img [src]="item.imageUrl" alt="{{ item.name }}" />
+        <div class="item-details">
+          <p>{{ item.name }}</p>
+          <p>$ {{ item.price }}</p>
+          <button class="remove-button" (click)="removeItem(i)">Remove</button>
+        </div>
+      </div>
+    </div>
+    <div class="total">
+      <p>Total: $ {{ calculateTotal() }}</p>
+    </div>
+  </div>
+  

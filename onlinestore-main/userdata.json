@@ -1,0 +1,88 @@
+{
+  "users": [
+    {
+      "username": "krishna",
+      "password": "123",
+      "id": 1
+    },
+    {
+      "username": "lokesh",
+      "password": "123",
+      "id": 2
+    },
+    {
+      "username": "Bhavana",
+      "password": "123",
+      "id": 3
+    },
+    {
+      "username": "balaram",
+      "password": "123",
+      "id": 4
+    },
+    {
+      "username": "janardhan",
+      "password": "123",
+      "id": 5
+    },
+    {
+      "username": "chana",
+      "password": "123",
+      "id": 6
+    },
+    {
+      "username": "test",
+      "password": "123",
+      "id": 7
+    },
+    {
+      "username": "gouranga",
+      "password": "123",
+      "id": 8
+    },
+    {
+      "username": "jyothi",
+      "password": "123",
+      "id": 9
+    },
+    {
+      "username": "vishwa",
+      "password": "456",
+      "id": 10
+    },
+    {
+      "username": "keerthana",
+      "password": "123",
+      "id": 11
+    },
+    {
+      "username": "tinku",
+      "password": "123",
+      "id": 12
+    },
+    {
+      "username": "bhu",
+      "password": "123",
+      "id": 13
+    },
+    {
+      "username": "rama",
+      "password": "234555",
+      "id": 14
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "watch",
+      "price": 10.99,
+      "imageUrl": "assets/images/watch4.gif"
+    },
+    {
+      "id": 2,
+      "name": "Rwatch",
+      "price": 10.99,
+      "imageUrl": "assets/images/watch3.png"
+    }
+  ]
+}

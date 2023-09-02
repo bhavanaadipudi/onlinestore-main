@@ -1,0 +1,66 @@
+<div class="user-management">
+  <h2>User Management</h2>
+
+  <button (click)="showAddUserForm = true" style="background-color: #3498db; color: white;">Create User</button>
+
+
+  <div *ngIf="showAddUserForm" class="add-user-form">
+    <h3>Add User</h3>
+    <form [formGroup]="addUserForm" (ngSubmit)="onAddUserSubmit()">
+      <div>
+        <label for="username">Username:</label>
+        <input type="text" id="username" formControlName="username" />
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" formControlName="password" />
+      </div>
+      <button type="submit">Add User</button>
+    </form>
+  </div>
+
+
+
+
+
+    <div class="user-list">
+      <h3>User List</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Username</th>
+            <th>Password</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of userList">
+            <td>{{ user.id }}</td>
+            <td>{{ user.username }}</td>
+            <td>{{ user.password }}</td>
+            <td>
+              <button (click)="onEditUser(user)">Edit</button>
+              <button (click)="onDeleteUser(user.id)">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  
+    <div class="edit-user-form" *ngIf="selectedUser">
+      <h3>Edit User</h3>
+      <form [formGroup]="editUserForm" (ngSubmit)="onSaveEdit()">
+        <div>
+          <label for="editUsername">Username:</label>
+          <input type="text" id="editUsername" formControlName="username" />
+        </div>
+        <div>
+          <label for="editPassword">Password:</label>
+          <input type="password" id="editPassword" formControlName="password" />
+        </div>
+        <button type="submit">Save Changes</button>
+      </form>
+    </div>
+  </div>
+  

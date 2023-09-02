@@ -1,0 +1,84 @@
+/* cart.component.css */
+.cart-container {
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+  
+    h2 {
+      font-size: 24px;
+      margin-bottom: 16px;
+    }
+  
+    .cart-items {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .cart-item {
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 12px;
+      margin: 12px;
+      width: calc(33.33% - 24px);
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+  
+      &:hover {
+        transform: translateY(-4px);
+      }
+  
+      .item-details {
+        display: flex;
+        align-items: center;
+  
+        .item-image {
+          width: 60px;
+          height: 60px;
+          object-fit: cover;
+          border-radius: 50%;
+          margin-right: 12px;
+        }
+  
+        .item-info {
+          flex-grow: 1;
+          .item-name {
+            font-size: 18px;
+            margin-bottom: 4px;
+          }
+  
+          .item-price {
+            font-size: 16px;
+            color: #888;
+          }
+        }
+      }
+    }
+  
+    .cart-total {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 16px;
+      font-size: 18px;
+  
+      h3 {
+        margin-right: 8px;
+      }
+    }
+  }
+  
+  /* Styling for Remove Button */
+  .remove-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  
+    &:hover {
+      background-color: darkred;
+    }
+  }
+  
